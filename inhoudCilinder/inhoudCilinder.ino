@@ -13,19 +13,19 @@ void setup() {
 void loop() {
   // put your main code here, to run repeatedly:
   
-  Serial.println("What's your name sir?");
+  Serial.println("Wat is je naam?");
   while(Serial.available()==0) {}
   myName = Serial.readString();
 
-  Serial.println(myName + " and how old are you?");
+  Serial.println("en hoe oud ben je " + myName + " ?");
   while(Serial.available()==0) {}
   age = Serial.parseInt();
 
-  Serial.println("What's the height of your cilinder?");
+  Serial.println("Wat is de hoogte van je cilinder?");
   while(Serial.available()==0) {}
   height = Serial.parseFloat();
 
-  Serial.println("What's the diameter of your cilinder?");
+  Serial.println("Wat is de diameter van je cilinder?");
   while(Serial.available()==0) {}
   diameter = Serial.parseFloat();
 
